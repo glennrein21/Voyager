@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF326F442A18D3FE00791020 /* VoyagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F432A18D3FE00791020 /* VoyagerApp.swift */; };
+		AF326F482A18D3FF00791020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF326F472A18D3FF00791020 /* Assets.xcassets */; };
+		AF326F4B2A18D3FF00791020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF326F4A2A18D3FF00791020 /* Preview Assets.xcassets */; };
+		AF326F5A2A18D51D00791020 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F592A18D51D00791020 /* HomeView.swift */; };
+		AF326F5C2A18D5B800791020 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F5B2A18D5B800791020 /* MapViewRepresentable.swift */; };
+		AF326F5E2A18D95400791020 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F5D2A18D95400791020 /* LocationManager.swift */; };
+		AF326F6A2A19CA4E00791020 /* CurrentLocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F692A19CA4E00791020 /* CurrentLocationButton.swift */; };
+		AF326F922A1B541F00791020 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F912A1B541F00791020 /* HistoryButton.swift */; };
+		AF326F942A1B556900791020 /* DataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326F932A1B556900791020 /* DataButton.swift */; };
+		AF326F9F2A1C7CCE00791020 /* Gotham-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF326F9A2A1C7CCE00791020 /* Gotham-Ultra.otf */; };
+		AF326FA02A1C7CCE00791020 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF326F9B2A1C7CCE00791020 /* Gotham-Black.otf */; };
+		AF326FA12A1C7CCE00791020 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF326F9C2A1C7CCE00791020 /* Gotham-Bold.otf */; };
+		AF326FA22A1C7CCE00791020 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF326F9D2A1C7CCE00791020 /* Gotham-Medium.otf */; };
+		AF326FA32A1C7CCE00791020 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF326F9E2A1C7CCE00791020 /* Gotham-Book.otf */; };
+		AF326FA72A1CB4F800791020 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = AF326FA62A1CB4F800791020 /* SwiftUIX */; };
+		AF326FAF2A1D310A00791020 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326FAE2A1D310A00791020 /* BlurView.swift */; };
+		AF326FB12A1D335F00791020 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF326FB02A1D335F00791020 /* CustomCorner.swift */; };
+		AF8A4B562A1DF8F20065B7D9 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = AF8A4B552A1DF8F20065B7D9 /* BottomSheet */; };
+		AF8A4B5A2A1E0AFB0065B7D9 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B592A1E0AFB0065B7D9 /* CarouselView.swift */; };
+		AF8A4B5C2A1E1FB50065B7D9 /* GeofenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B5B2A1E1FB50065B7D9 /* GeofenceManager.swift */; };
+		AF8A4B5E2A1F48880065B7D9 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B5D2A1F48880065B7D9 /* CoreLocationManager.swift */; };
+		AF8A4B602A1F68770065B7D9 /* HelperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B5F2A1F68770065B7D9 /* HelperManager.swift */; };
+		AF8A4B642A1FAC8D0065B7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B632A1FAC8D0065B7D9 /* AppDelegate.swift */; };
+		AF8A4B662A1FC11C0065B7D9 /* AppearMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B652A1FC11C0065B7D9 /* AppearMapPin.swift */; };
+		AF8A4B682A1FF0F30065B7D9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8A4B672A1FF0F30065B7D9 /* SplashScreenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF326F402A18D3FE00791020 /* Voyager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF326F432A18D3FE00791020 /* VoyagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerApp.swift; sourceTree = "<group>"; };
+		AF326F472A18D3FF00791020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF326F4A2A18D3FF00791020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF326F592A18D51D00791020 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AF326F5B2A18D5B800791020 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		AF326F5D2A18D95400791020 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AF326F692A19CA4E00791020 /* CurrentLocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationButton.swift; sourceTree = "<group>"; };
+		AF326F912A1B541F00791020 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
+		AF326F932A1B556900791020 /* DataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataButton.swift; sourceTree = "<group>"; };
+		AF326F9A2A1C7CCE00791020 /* Gotham-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Ultra.otf"; sourceTree = "<group>"; };
+		AF326F9B2A1C7CCE00791020 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		AF326F9C2A1C7CCE00791020 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		AF326F9D2A1C7CCE00791020 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		AF326F9E2A1C7CCE00791020 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		AF326FA42A1C89E700791020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AF326FAE2A1D310A00791020 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		AF326FB02A1D335F00791020 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		AF8A4B592A1E0AFB0065B7D9 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		AF8A4B5B2A1E1FB50065B7D9 /* GeofenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceManager.swift; sourceTree = "<group>"; };
+		AF8A4B5D2A1F48880065B7D9 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
+		AF8A4B5F2A1F68770065B7D9 /* HelperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperManager.swift; sourceTree = "<group>"; };
+		AF8A4B632A1FAC8D0065B7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF8A4B652A1FC11C0065B7D9 /* AppearMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearMapPin.swift; sourceTree = "<group>"; };
+		AF8A4B672A1FF0F30065B7D9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF326F3D2A18D3FE00791020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF326FA72A1CB4F800791020 /* SwiftUIX in Frameworks */,
+				AF8A4B562A1DF8F20065B7D9 /* BottomSheet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF326F372A18D3FE00791020 = {
+			isa = PBXGroup;
+			children = (
+				AF326F472A18D3FF00791020 /* Assets.xcassets */,
+				AF326F6B2A1A0D9300791020 /* New Group */,
+				AF326F992A1C7CA000791020 /* Font */,
+				AF326F422A18D3FE00791020 /* Voyager */,
+				AF326F412A18D3FE00791020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF326F412A18D3FE00791020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F402A18D3FE00791020 /* Voyager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF326F422A18D3FE00791020 /* Voyager */ = {
+			isa = PBXGroup;
+			children = (
+				AF326FA42A1C89E700791020 /* Info.plist */,
+				AF326F532A18D46600791020 /* App */,
+				AF326F552A18D47200791020 /* Core */,
+				AF326F542A18D47100791020 /* Extension */,
+				AF326F522A18D44F00791020 /* Model */,
+				AF326F512A18D44600791020 /* Managers */,
+				AF326F492A18D3FF00791020 /* Preview Content */,
+			);
+			path = Voyager;
+			sourceTree = "<group>";
+		};
+		AF326F492A18D3FF00791020 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F4A2A18D3FF00791020 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF326F512A18D44600791020 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F5D2A18D95400791020 /* LocationManager.swift */,
+				AF8A4B5F2A1F68770065B7D9 /* HelperManager.swift */,
+				AF8A4B5B2A1E1FB50065B7D9 /* GeofenceManager.swift */,
+				AF8A4B5D2A1F48880065B7D9 /* CoreLocationManager.swift */,
+				AF8A4B632A1FAC8D0065B7D9 /* AppDelegate.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AF326F522A18D44F00791020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF326F532A18D46600791020 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F432A18D3FE00791020 /* VoyagerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF326F542A18D47100791020 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			path = ../Extension;
+			sourceTree = "<group>";
+		};
+		AF326F552A18D47200791020 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F632A19C91800791020 /* Home */,
+				AF326F662A19C9A500791020 /* CurrentLocation */,
+			);
+			name = Core;
+			path = "../New Group/Core";
+			sourceTree = "<group>";
+		};
+		AF326F572A18D4F500791020 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F5B2A18D5B800791020 /* MapViewRepresentable.swift */,
+				AF326F592A18D51D00791020 /* HomeView.swift */,
+				AF8A4B672A1FF0F30065B7D9 /* SplashScreenView.swift */,
+				AF8A4B592A1E0AFB0065B7D9 /* CarouselView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF326F582A18D4F700791020 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AF326F632A19C91800791020 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF326FB22A1D35B500791020 /* Blur */,
+				AF326F572A18D4F500791020 /* Views */,
+				AF326F582A18D4F700791020 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF326F642A19C95100791020 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F692A19CA4E00791020 /* CurrentLocationButton.swift */,
+				AF326F912A1B541F00791020 /* HistoryButton.swift */,
+				AF326F932A1B556900791020 /* DataButton.swift */,
+				AF8A4B652A1FC11C0065B7D9 /* AppearMapPin.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF326F652A19C97B00791020 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AF326F662A19C9A500791020 /* CurrentLocation */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F642A19C95100791020 /* Views */,
+				AF326F652A19C97B00791020 /* ViewModels */,
+			);
+			path = CurrentLocation;
+			sourceTree = "<group>";
+		};
+		AF326F6B2A1A0D9300791020 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			path = "Voyager/Preview Content/New Group";
+			sourceTree = "<group>";
+		};
+		AF326F992A1C7CA000791020 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AF326F9B2A1C7CCE00791020 /* Gotham-Black.otf */,
+				AF326F9C2A1C7CCE00791020 /* Gotham-Bold.otf */,
+				AF326F9E2A1C7CCE00791020 /* Gotham-Book.otf */,
+				AF326F9D2A1C7CCE00791020 /* Gotham-Medium.otf */,
+				AF326F9A2A1C7CCE00791020 /* Gotham-Ultra.otf */,
+			);
+			name = Font;
+			path = Voyager/Managers/Font;
+			sourceTree = "<group>";
+		};
+		AF326FB22A1D35B500791020 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				AF326FAE2A1D310A00791020 /* BlurView.swift */,
+				AF326FB02A1D335F00791020 /* CustomCorner.swift */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF326F3F2A18D3FE00791020 /* Voyager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF326F4E2A18D3FF00791020 /* Build configuration list for PBXNativeTarget "Voyager" */;
+			buildPhases = (
+				AF326F3C2A18D3FE00791020 /* Sources */,
+				AF326F3D2A18D3FE00791020 /* Frameworks */,
+				AF326F3E2A18D3FE00791020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voyager;
+			packageProductDependencies = (
+				AF326FA62A1CB4F800791020 /* SwiftUIX */,
+				AF8A4B552A1DF8F20065B7D9 /* BottomSheet */,
+			);
+			productName = Voyager;
+			productReference = AF326F402A18D3FE00791020 /* Voyager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF326F382A18D3FE00791020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AF326F3F2A18D3FE00791020 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AF326F3B2A18D3FE00791020 /* Build configuration list for PBXProject "Voyager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF326F372A18D3FE00791020;
+			packageReferences = (
+				AF326FA52A1CB4F800791020 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				AF8A4B542A1DF8F20065B7D9 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
+			productRefGroup = AF326F412A18D3FE00791020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF326F3F2A18D3FE00791020 /* Voyager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF326F3E2A18D3FE00791020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF326FA22A1C7CCE00791020 /* Gotham-Medium.otf in Resources */,
+				AF326FA12A1C7CCE00791020 /* Gotham-Bold.otf in Resources */,
+				AF326F4B2A18D3FF00791020 /* Preview Assets.xcassets in Resources */,
+				AF326FA02A1C7CCE00791020 /* Gotham-Black.otf in Resources */,
+				AF326F482A18D3FF00791020 /* Assets.xcassets in Resources */,
+				AF326FA32A1C7CCE00791020 /* Gotham-Book.otf in Resources */,
+				AF326F9F2A1C7CCE00791020 /* Gotham-Ultra.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF326F3C2A18D3FE00791020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8A4B662A1FC11C0065B7D9 /* AppearMapPin.swift in Sources */,
+				AF326FB12A1D335F00791020 /* CustomCorner.swift in Sources */,
+				AF326F942A1B556900791020 /* DataButton.swift in Sources */,
+				AF326F922A1B541F00791020 /* HistoryButton.swift in Sources */,
+				AF8A4B5E2A1F48880065B7D9 /* CoreLocationManager.swift in Sources */,
+				AF326F5E2A18D95400791020 /* LocationManager.swift in Sources */,
+				AF326F6A2A19CA4E00791020 /* CurrentLocationButton.swift in Sources */,
+				AF8A4B682A1FF0F30065B7D9 /* SplashScreenView.swift in Sources */,
+				AF8A4B5A2A1E0AFB0065B7D9 /* CarouselView.swift in Sources */,
+				AF8A4B642A1FAC8D0065B7D9 /* AppDelegate.swift in Sources */,
+				AF8A4B5C2A1E1FB50065B7D9 /* GeofenceManager.swift in Sources */,
+				AF326FAF2A1D310A00791020 /* BlurView.swift in Sources */,
+				AF326F442A18D3FE00791020 /* VoyagerApp.swift in Sources */,
+				AF326F5C2A18D5B800791020 /* MapViewRepresentable.swift in Sources */,
+				AF8A4B602A1F68770065B7D9 /* HelperManager.swift in Sources */,
+				AF326F5A2A18D51D00791020 /* HomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AF326F4C2A18D3FF00791020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF326F4D2A18D3FF00791020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF326F4F2A18D3FF00791020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voyager/Preview Content\"";
+				DEVELOPMENT_TEAM = N3L6NTTCFV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Voyager/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please to allow us to always access your location for best experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please to allow us to access your location for the best experience";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyona.Voyager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF326F502A18D3FF00791020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voyager/Preview Content\"";
+				DEVELOPMENT_TEAM = N3L6NTTCFV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Voyager/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please to allow us to always access your location for best experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please to allow us to access your location for the best experience";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyona.Voyager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF326F3B2A18D3FE00791020 /* Build configuration list for PBXProject "Voyager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF326F4C2A18D3FF00791020 /* Debug */,
+				AF326F4D2A18D3FF00791020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF326F4E2A18D3FF00791020 /* Build configuration list for PBXNativeTarget "Voyager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF326F4F2A18D3FF00791020 /* Debug */,
+				AF326F502A18D3FF00791020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF326FA52A1CB4F800791020 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+		AF8A4B542A1DF8F20065B7D9 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF326FA62A1CB4F800791020 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF326FA52A1CB4F800791020 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		AF8A4B552A1DF8F20065B7D9 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8A4B542A1DF8F20065B7D9 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF326F382A18D3FE00791020 /* Project object */;
+}
